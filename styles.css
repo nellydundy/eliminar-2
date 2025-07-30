@@ -1,0 +1,8 @@
+
+body { font-family: sans-serif; background: #fff0f5; color: #333; margin: 0; padding: 0; }
+header, footer { background: #ff69b4; color: white; text-align: center; padding: 1em; }
+nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
+button { background: hotpink; color: white; border: none; padding: 0.5em 1em; border-radius: 8px; }
+img { width: 80px; vertical-align: middle; margin-right: 10px; border-radius: 10px; }
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 1em; }
