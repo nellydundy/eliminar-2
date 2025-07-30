@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Receta de Ensalada Saludable",
+    "archivo": "receta-ensalada.html",
+    "imagen": "../imagenes/ensalada.jpg"
+  },
+  {
+    "titulo": "Mascarilla Casera para la Piel",
+    "archivo": "mascarilla-belleza.html",
+    "imagen": "../imagenes/mascarilla.jpg"
+  },
+  {
+    "titulo": "Bienestar y Fitness",
+    "archivo": "fitness-bienestar.html",
+    "imagen": "../imagenes/fitness.jpg"
+  }
+]
