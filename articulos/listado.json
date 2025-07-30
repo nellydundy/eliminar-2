@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Receta de Ensalada",
+    "archivo": "receta-ensalada.html",
+    "imagen": "ensalada.jpg"
+  },
+  {
+    "titulo": "Mascarilla Casera",
+    "archivo": "mascarilla-belleza.html",
+    "imagen": "mascarilla.jpg"
+  },
+  {
+    "titulo": "Fitness y Bienestar",
+    "archivo": "fitness-bienestar.html",
+    "imagen": "fitness.jpg"
+  }
+]
