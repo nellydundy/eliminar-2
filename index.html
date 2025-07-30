@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi vida, mi ritmo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="imagenes/favicon.png" />
+</head>
+<body>
+  <header>
+    <h1>Bienvenida a Mi vida, mi ritmo</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="mailto:nellytrabj@gmail.com">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Suscríbete para recibir novedades</h2>
+      <form action="https://formsubmit.co/nellytrabj@gmail.com" method="POST">
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Artículos recientes</h2>
+      <ul id="lista-articulos">
+        <!-- Aquí se cargan automáticamente los artículos -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi vida, mi ritmo</p>
+  </footer>
+
+  <script>
+    fetch("articulos/listado.json")
+      .then(res => res.json())
+      .then(data => {
+        const lista = document.getElementById("lista-articulos");
+        data.forEach(art => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="articulos/${art.archivo}"><img src="imagenes/${art.imagen}" alt="">${art.titulo}</a>`;
+          lista.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
